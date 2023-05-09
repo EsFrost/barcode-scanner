@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<link rel='stylesheet' href='./barcodeScanMain.css'>
+	</head>
+
+	<body>
+		<div class='wrapper'>
+			<div class='cache-buttons'>
+				<button id="sales">Πωλήσεις ημέρας</button>
+				<button id="clearCache">Καθαρισμός μνήμης</button>
+				<button id="return">Επιστροφή</button>
+				<span>Σημαντικό: Σε περίπτωση διόρθωσης χρειάζεται εκ νέου υπολογισμός του συνόλου (πατώντας το κουμπί των πωλήσεων ημέρας)!</span>
+			</div>
+
+			<div class='button-wrap'>
+				<label class='button' for='input'>Αρχείο excel(.xlxs)</label>
+				<input id='input' type='file' />
+			</div>
+
+			<div class='search-wrap'>
+				<input id='search' type='text' placeholder='Αναζήτηση barcode' />
+				<button id="subtotal">Απόδειξη</button>
+			</div>
+			
+
+			<div id='productResult'></div>
+		</div>
+
+		<div id="colorMode"></div>
+		
+
+		<script src='./read-excel-file.min.js'></script>
+
+		<script src='./barcodeScan.js'></script>
+	</body>
+
+</html>
+
