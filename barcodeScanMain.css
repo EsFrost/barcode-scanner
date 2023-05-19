@@ -167,3 +167,57 @@ button {
 	margin-left: 1.5rem;
 	margin-top: 1rem;
 }
+
+#modal-wrapper {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	justify-content: center;
+}
+
+#modal {
+	align-self: center;
+}
+
+#modal-btn {
+	margin-top: 20px;
+}
+
+#modal-subtotal {
+	margin-top: 20px;
+	font-size: 1.5rem;
+	color: rgba(255, 60, 70, 1);
+	margin-left: 1.5rem;
+	margin-top: 1rem;
+}
+
+ /* The alert message box */
+#alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+  width: 600px;
+  display: none;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+} 
